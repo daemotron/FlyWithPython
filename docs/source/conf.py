@@ -31,7 +31,7 @@ def read_version_from_file():
     path = os.path.dirname(
         os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     )
-    path = os.path.join(path, 'src', 'conf', 'version.h')
+    path = os.path.join(path, 'src', 'version.h')
     with open(path) as fp:
         lines = list(filter(filter_version_line, fp))
     return lines
